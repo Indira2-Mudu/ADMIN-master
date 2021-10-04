@@ -11,6 +11,7 @@ import FrontFull from "../Front/FrontFull";
 import FormQuestion from "../Question/FormQuestion";
 import FrontPayment from "../Payment/FrontPayment";
 import FrontTV from "../TV Kanal/FrontTV";
+import SideBar2 from "../../Components/SideBar/SideBar2";
 
 class Main extends React.Component {
     render() {
@@ -18,8 +19,9 @@ class Main extends React.Component {
             <>
                 <BrowserRouter>
                     <Switch>
-                        <div className="body w3-container w3-light-grey w3-card">
+                        <div className="body w3-container w3-light-grey">
                             <Route path="/" component={SideBar}/>
+                            <Route path="/" component={SideBar2}/>
                             <div className="w3-bar">
                                 <Route path="/" exact component={Front}/>
                                 <Route path="/FrontFull" component={FrontFull}/>

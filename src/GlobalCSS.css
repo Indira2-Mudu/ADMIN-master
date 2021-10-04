@@ -13,151 +13,136 @@
     width:250px;
     margin: 1%;
 }
+.mySidebar img{
+    width:60%;
+    padding-left: 10%;
 
+
+}
+.mySidebar2{
+    z-index:3;
+    width:100%;
+}
+.mySidebar2 a{
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid black;
+}
+.mySidebar2 img {
+    width: 30%;
+}
 .myOverlay{
     cursor: pointer;
 }
-
 .page_1{
     margin: 1%;
     margin-left: 20%;
-    min-height: 800px;
-}
+    min-height: 685px;
 
+}
 h1,h2,h3,h4,h5,h6{
     padding-top: 5px;
     color: #c20937;
     text-align: center;
 }
-
 h1,h2{
     margin-top: 0;
     font-size: 30px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-
 h3{
     margin-top: 0;
     font-size: 18px;
 }
-
 a{
     text-decoration: none;
     color: #c20937;
 }
-
 header {
     position: relative;
     padding-top: 20px;
     padding-bottom: 40px;
 }
-
 .row11{
     align-content: center;
 }
-
-
 .t-left{
     font-size: 14px;
 }
-
 .svg-l img {
     vertical-align: middle;
     width: 170px;
     height: 100px;
 }
-
 .svg-l{
     width: 100%;
     margin: 0 auto;
     text-align: center;
 }
-
 .page {
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    height: 95%;
 }
-
 .page2{
     padding-top: 40px;
     padding-bottom: 50px;
+    min-height: 90%;
 }
-
 .page2 p{
     width: 100%;
 }
-
 .page p{
     width: 80%;
 }
-
 .topMenu{
     display: block;
 }
-
-header .text {
-    position: absolute;
-    right: 40px;
-    background: #fff;
-    text-transform: uppercase;
-    border-radius: 53px;
-    padding: 20px 30px;
-    text-align: center;
-    width: 30%;
-    font-size: 20px;
-    margin-top: 48px;
-    margin-left: 200px;
-    text-decoration: none !important;
-    color: #c20937;
-    float: right;
-    box-shadow: 0px 4px 0px 0px #cfcfcf;
-}
-
 table, td, th {
     border: 1px solid black;
 }
-
 table {
     border-collapse: separate;
     width: 100%;
 }
-
 th {
-    height: 70px;
+    height: 60px;
 }
 
-label{
-    text-transform: uppercase;
-    font-size: 18px;
-    color: #808084;
-    font-weight: normal;
-    margin: 0px 0px 14px 0px;
-}
 
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1600px){
     .mySidebar {
-        width:180px;
+        width:250px;
     }
     .col-6{
         width:45%;
+    }
+    .mySidebar2 {
+        width:0;
     }
 
 }
 
 @media screen and (max-width: 1200px){
     .mySidebar {
-        width:150px;
+        width:200px;
     }
     .col-6{
         width:45%;
+    }
+    .page_1{
+        margin-left: 23%;
+        min-height: 590px;
+    }
+    .mySidebar2 {
+        width:0;
     }
 
 }
 
 @media screen and (max-width: 1199px){
     .mySidebar{
-        width: 130px;
+        width: 180px;
         font-size: 11px;
     }
     .col-6{
@@ -165,14 +150,19 @@ label{
     }
     .page_1{
         margin: 2%;
-        margin-left: 20%;
+        margin-left: 22%;
+        min-height: 590px;
+    }
+
+    .mySidebar2 {
+        width:0;
     }
 
 }
 
 @media screen and (max-width: 991px){
     .mySidebar{
-        width: 120px;
+        width: 150px;
         font-size: 11px;
     }
     .col-6{
@@ -180,7 +170,7 @@ label{
     }
     .page_1{
         margin: 2%;
-        margin-left: 18%;
+        margin-left: 23%;
     }
     h1, h2 {
         margin-top: 2px;
@@ -191,10 +181,23 @@ label{
     table, td, th{
         font-size: 13px
     }
+    .mySidebar2 {
+        list-style: none;
+    }
 
 }
 
 @media screen and (max-width: 767px){
+
+    .mySidebar2 {
+        width:95%;
+        margin: 0 auto;
+    }
+
+    nav a{
+        font-size: 11px;
+    }
+
     .mySidebar{
         display: none;
     }
@@ -202,8 +205,7 @@ label{
         width:100%;
     }
     .page_1{
-        margin: auto;
-        min-height: 100px;
+        margin: 100px 10px;
         min-height: 700px;
     }
     h1, h2 {
@@ -223,6 +225,11 @@ label{
 }
 
 @media screen and (max-width: 570px){
+    .mySidebar2 {
+        width:100%;
+        margin: 0 auto;
+    }
+
     .mySidebar{
         display: none;
     }
@@ -230,7 +237,7 @@ label{
         width:100%;
     }
     .page_1{
-        margin: auto;
+        margin: 100px 10px;
         min-height: 700px;
     }
     h1, h2 {
