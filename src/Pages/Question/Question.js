@@ -13,9 +13,10 @@ class Question extends React.Component {
                 </div>
                 <div className="w3-container">
                     <Link to={`/FormQuestion`}>
-                        <button className="w3-button w3-section w3-padding-large w3-white w3-border w3-block"
-                                type="submit"
-                                style={{float: 'right'}}>
+                        <button
+                            className="w3-card w3-button w3-section w3-padding-large w3-white w3-border w3-block"
+                            type="submit"
+                            style={{float: 'right'}}>
                             <h3>Добавить</h3>
                         </button>
                     </Link>

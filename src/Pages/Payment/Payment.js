@@ -31,7 +31,10 @@ class Payment extends React.Component {
                     </div>
                     <div className="w3-container">
                         <Link to={`/FrontPayment`}>
-                            <button className="w3-button w3-section w3-padding-large w3-white w3-border w3-block" type="submit" style={{float: 'right'}}>
+                            <button data-bs-toggle="modal" data-bs-target="#add-modal"
+                                className="w3-button w3-section w3-padding-large w3-white w3-border w3-block"
+                                type="submit"
+                                style={{float: 'right'}}>
                                 <h3>Добавить</h3>
                             </button>
                         </Link>
@@ -180,7 +183,7 @@ class Payment extends React.Component {
                                     <td>
                                         <img src={visa} alt="visa"/>
                                     </td>
-                                    <td></td>
+                                    <td/>
                                     <td>
                                         <button className="w3-button w3-border" type="submit">
                                             Удалить

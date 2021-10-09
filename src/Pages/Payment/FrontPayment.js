@@ -21,7 +21,7 @@ class FrontPayment extends React.Component {
                                 <input className="w3-input w3-border" type="text" placeholder="раздел"/>
                             </div>
                         </div>
-                        <Link to={`/question`}>
+                        <Link to={`/pay`}>
                             <button
                                 className="w3-card w3-button w3-section w3-padding-large w3-white w3-border w3-block"
                                 type="submit"
@@ -29,7 +29,7 @@ class FrontPayment extends React.Component {
                                 <h3>Добавить</h3>
                             </button>
                         </Link>
-                        <Link to={`/question`}>
+                        <Link to={`/pay`}>
                             <button
                                 className="w3-card w3-button w3-section w3-padding-large w3-white w3-border w3-block"
                                 type="submit"

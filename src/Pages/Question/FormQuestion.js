@@ -5,6 +5,26 @@ import {Link} from "react-router-dom";
 
 
 class FrontQuestion extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            question:{}
+        }
+    }
+
+    componentDidMount() {
+        fetch( 'http://localhost:3003/questions')
+            .then(response =>{
+                if(response.ok){
+                    return response.json();
+                }else{
+                    alert('Что то пошло не так.Код ошибки: ', response.status)
+                }
+            })
+            .then(data=> this.setState( {question:data}))
+    }
+
     render() {
         return (
             <>
