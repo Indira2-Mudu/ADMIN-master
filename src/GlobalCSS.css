@@ -23,7 +23,7 @@
     z-index:3;
     width:100%;
 }
-.mySidebar2 a{
+.mySidebar2 NavLink{
     font-weight: bold;
     font-size: 12px;
     border: 1px solid black;
@@ -55,7 +55,7 @@ h3{
     margin-top: 0;
     font-size: 18px;
 }
-a{
+NavLink{
     text-decoration: none;
     color: #c20937;
 }
@@ -105,9 +105,14 @@ table {
     border-collapse: separate;
     width: 100%;
 }
-th {
+th, input {
     height: 60px;
 }
+input{
+    width: 100%;
+}
+
+
 
 
 @media screen and (max-width: 1600px){

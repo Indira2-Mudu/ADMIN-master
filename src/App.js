@@ -14,6 +14,7 @@ function App() {
                     <Route path="/" component={Main}/>
                 </Switch>
             </BrowserRouter>
+
         </>
     );
 }

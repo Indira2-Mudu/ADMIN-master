@@ -3,7 +3,8 @@ import './../../GlobalCSS.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link} from "react-router-dom";
 
-class FrontTV extends React.Component {
+class NewChannel extends React.Component {
+
     render() {
         return (
             <>
@@ -21,6 +22,8 @@ class FrontTV extends React.Component {
                                     <input className="w3-input w3-border" type="text"
                                            placeholder="наименование канала"/>
                                 </div>
+                                <input className="w3-check" type="checkbox"/>
+                                    <label>Статус</label>
                             </div>
                             <div className="w3-container">
                                 <Link to={`/tv`}>
@@ -48,4 +51,4 @@ class FrontTV extends React.Component {
     }
 }
 
-export default FrontTV;
+export default NewChannel;
